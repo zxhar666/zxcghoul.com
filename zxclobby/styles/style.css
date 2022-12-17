@@ -1,0 +1,280 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+body{
+    margin: 0;
+    font-family: Open Sans;
+    color:white;
+    background-color: black;
+}
+
+h1, p{
+    margin: 0;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+    margin-right: 60px;
+    font-size: 10px;
+}
+
+a:active{
+    color:red;
+}
+
+h1{
+    font-size: 48px;
+    margin-bottom: 60px;
+}
+
+/* header */
+
+header{
+    padding-left: 70px;
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
+
+.header-inner{
+    display: flex;
+}
+
+.logoImg{
+    width: 180px;
+    height: 122px;
+}
+
+nav{
+    height: 122px;
+    display: flex;
+    align-items: center;
+}
+
+ul {
+    display: flex;
+    justify-content: right;
+    list-style: none; /*убираем маркеры списка*/
+    padding-left: 0; /*убираем левый отступ, равный 40px*/
+}
+
+.bogatyr{
+    background-image: url(../images/fd9UolMRP10.jpg);
+    background-size: cover;
+    padding-top: 40vh;
+    padding-bottom: 5vh;
+    padding-left: 70px;
+}
+
+
+
+.title{
+    margin: 0;
+}
+
+/* posters */
+
+.text{
+    margin-left: 70px;
+    display: flex;
+    margin-top: 100px;
+    margin-bottom: 30px;
+}
+
+.lds-grid {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+.lds-grid div {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: #fff;
+  animation: lds-grid 1.2s linear infinite;
+}
+.lds-grid div:nth-child(1) {
+  top: 8px;
+  left: 8px;
+  animation-delay: 0s;
+}
+.lds-grid div:nth-child(2) {
+  top: 8px;
+  left: 32px;
+  animation-delay: -0.4s;
+}
+.lds-grid div:nth-child(3) {
+  top: 8px;
+  left: 56px;
+  animation-delay: -0.8s;
+}
+.lds-grid div:nth-child(4) {
+  top: 32px;
+  left: 8px;
+  animation-delay: -0.4s;
+}
+.lds-grid div:nth-child(5) {
+  top: 32px;
+  left: 32px;
+  animation-delay: -0.8s;
+}
+.lds-grid div:nth-child(6) {
+  top: 32px;
+  left: 56px;
+  animation-delay: -1.2s;
+}
+.lds-grid div:nth-child(7) {
+  top: 56px;
+  left: 8px;
+  animation-delay: -0.8s;
+}
+.lds-grid div:nth-child(8) {
+  top: 56px;
+  left: 32px;
+  animation-delay: -1.2s;
+}
+.lds-grid div:nth-child(9) {
+  top: 56px;
+  left: 56px;
+  animation-delay: -1.6s;
+}
+@keyframes lds-grid {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+.postersInner{
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 80px;
+}
+
+.movie{
+    width: 300px;
+    border: 1px dotted white;
+}
+
+.poster{
+    width: 300px;
+    transition: transform 3s;
+}
+
+.poster:hover{
+    transform: scale(2);
+}
+
+.pMovie::before{
+    content: url("../images/cinema.png");
+    margin-right: 5px;
+}
+
+.tickets{
+    font-family: Open Sans;
+    padding: 5px;
+    background-color: red;
+    font-weight: 900;
+    margin-top: 5px;
+}
+
+.news{
+    display: flex;
+    flex-direction: column;
+    padding-left: 70px;
+}
+
+input{
+    width: 250px;
+    margin-top: 5px;
+}
+
+.subscribe{
+    width: 150px;
+    font-family: Open Sans;
+    background-color: red;
+    font-weight: 900;
+    margin-top: 5px;
+}
+
+/* footer */
+
+footer{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 70px;
+}
+
+.miniLogo{
+    width: 73px;
+    height: 43px;
+    float: left;
+    margin-right: 20px;
+}
+
+.textFooter {
+    display: flex;
+    flex-direction: column;
+    padding-left: 80px;
+}
+
+.footerP{
+    color: #504D4D;
+    font-weight: 900;
+}
+
+span{
+    color: red;
+    font-size: 28px;
+    border: 1px solid red;
+    padding: 2px;
+}
+
+/* soul */
+
+.info{
+    display: flex; 
+    justify-content: space-between; 
+}
+
+.infoPoster {
+    margin-left: 70px;
+    width: calc(35% - 70px);
+}
+
+.infoText{
+    margin-right: 50px;
+    width: calc(65% - 50px - 50px);
+}
+.rightpic {
+    float: left; /* Выравнивание по правому краю */
+    margin: 0 0 5px 5px; /* Отступы вокруг фотографии */
+   }
+
+   
+
+
+* {
+	margin: 0;
+	padding: 0;
+}
+html,
+body {
+	height: 100%;
+}
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	min-height: 100%;
+}
+.content {
+	flex: 1 0 auto;
+}
+.footer {
+	flex: 0 0 auto;
+}
+.text {
+    text-align:  center;}
